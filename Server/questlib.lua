@@ -1,6 +1,7 @@
 ----------------
 -- Add:
 ----------------
+dofile(get_locale_base_path() .. "/quest/ibeast_addon.lua")
 function say2(msg)
 	msg_size = string.len(msg)
 	if msg_size > 59 then

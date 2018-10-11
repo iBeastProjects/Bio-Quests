@@ -11,11 +11,6 @@ You ca﻿n simply set up ﻿your own n﻿ew biologist quests﻿ using one of my 
 Tutorial (Server):
 1) Upload folder "biologist" in Server folder to your quest folder (e.x.: /home/m2server/srv1/share/locale/english/quest ==>> /home/m2server/srv1/share/locale/english/quest/biologist)
 2) Upload file "ibeast_addon.lua" into your quest folder (e.x.: /home/m2server/srv1/share/locale/english/quest)
+2.1) Open questlib.lua and add: dofile(get_locale_base_path() .. "/quest/ibeast_addon.lua")
 3) Add quests to quest_list
 4) Add function "say2" to your questlib.lua
-
-Tutorial (Server-Source):
-!! Do not replace, just edit !!
-1) Go to your game source and open questlua.cpp
-2) Find "questLocaleFileName" in your questlua.cpp
-3) Add lines under that function
